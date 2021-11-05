@@ -1,4 +1,4 @@
-# Stock Valuation & Analysi
+# Stock Valuation & Analysis
 ## Excel // Python
 
 # For Excel problem:
