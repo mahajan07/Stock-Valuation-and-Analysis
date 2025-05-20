@@ -17,7 +17,7 @@
 3. Compared and plotted risk of investment between simple return analysis techniques and Monte-Carlo simulations.
 
 ## Excel // Python
-# For Excel problem:
+# For Excel problem: 
  1. Pulling stock data from Google Finance
  2. Pulling financial data from Yahoo Finance
  3. Calculating valuation multipliers
