@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 21 16:17:08 2021
-
-@author: manu
+@author: Dewank Mahajan
 """
 
 import pandas as pd
@@ -52,8 +50,8 @@ print(config.DOW_30_TICKER)
                            ############# DOWNLOAD DATA #############
                            
                            
-df = YahooDownloader(start_date = '2008-01-01',
-                     end_date = '2021-01-01',
+df = YahooDownloader(start_date = '2018-01-01',
+                     end_date = '2025-01-01',
                      ticker_list = config.DOW_30_TICKER).fetch_data()    
 
 df.shape
@@ -84,8 +82,8 @@ processed_full = processed_full.fillna(0)
 processed_full.sort_values(['date','tic'],ignore_index=True).head(10)
 
 '''Train and Trade Split'''
-train = data_split(processed_full, '2009-01-01','2019-01-01')
-trade = data_split(processed_full, '2019-01-01','2021-01-01')
+train = data_split(processed_full, '2018-01-01','2022-01-01')
+trade = data_split(processed_full, '2023-01-01','2024-01-01')
 print(len(train))
 print(len(trade))
 
@@ -144,7 +142,7 @@ trained_a2c = agent.train_model(model=model_a2c,
 
 
 '''Set Turbulence Threshold'''
-data_turbulence = processed_full[(processed_full.date<'2019-01-01') & (processed_full.date>='2009-01-01')]
+data_turbulence = processed_full[(processed_full.date<'2023-01-01') & (processed_full.date>='2021-01-01')]
 insample_turbulence = data_turbulence.drop_duplicates(subset=['date'])
 
 turbulence_threshold = np.quantile(insample_turbulence.turbulence.values,1)
@@ -177,8 +175,8 @@ perf_stats_all = pd.DataFrame(perf_stats_all)
 print("==============Get Baseline Stats===========")
 baseline_df = get_baseline(
         ticker="^DJI", 
-        start = '2019-01-01',
-        end = '2021-01-01')
+        start = '2023-01-01',
+        end = '2023-01-01')
 
 stats = backtest_stats(baseline_df, value_col_name = 'close')
 
@@ -189,8 +187,8 @@ print("==============Compare to DJIA===========")
 # NASDAQ 100: ^NDX
 backtest_plot(df_account_value, 
              baseline_ticker = '^DJI', 
-             baseline_start = '2019-01-01',
-             baseline_end = '2021-01-01')
+             baseline_start = '2023-01-01',
+             baseline_end = '2023-01-01')
 
 df_account_value.date
 
