@@ -17,7 +17,7 @@
 3. Compared and plotted risk of investment between simple return analysis techniques and Monte-Carlo simulations.
 
 ## Excel // Python
-# For Excel problem: 
+# For Excel problem:- 
  1. Pulling stock data from Google Finance
  2. Pulling financial data from Yahoo Finance
  3. Calculating valuation multipliers
@@ -25,7 +25,7 @@
  5. Calculating fair price of a stock(TESLA)
 
 
-# For Python Analysis:
+# For Python Analysis:-
 
  1. What was the change in price of the stock over time?
  2. What was the daily return of the stock on average?
