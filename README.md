@@ -16,7 +16,6 @@
 2. Created visual representations of comparative daily returns and single-stock analysis using Matplotlib, as well as more complex heatmaps and distribution plots using Seaborn.
 3. Compared and plotted risk of investment between simple return analysis techniques and Monte-Carlo simulations.
 
-## Excel // Python
 # For Excel problem:- 
  1. Pulling stock data from Google Finance
  2. Pulling financial data from Yahoo Finance
