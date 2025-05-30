@@ -24,7 +24,7 @@
  5. Calculating fair price of a stock(TESLA)
 
 
-# For Python Analysis:-
+# For Python Analysis:- 
 
  1. What was the change in price of the stock over time?
  2. What was the daily return of the stock on average?
