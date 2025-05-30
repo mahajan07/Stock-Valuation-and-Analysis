@@ -1,4 +1,4 @@
-# Stock Valuation & Analysis:
+# Stock Valuation & Analysis: 
 # Stock-prediction & Top stocks:
 ### These projects are written and presented as Jupyter Notebooks (Python 3), and each link is followed by a short description of project goals, contributions, and dependencies used. This repository contains my detailed analysis of investment and finance-related data science projects.
 
