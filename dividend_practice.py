@@ -134,10 +134,7 @@ class Stock(object):
         return self._dividend_yield >= 0.02 and self._dividend_increase_since <= 2007 and             self._chowder >= 9 and self._roe >= 15 and self._payout_ratio <= 60 and             self._market_cap >= 2000000000 and self._beta <= 1 and self._pe <= 40
 
 
-TICKERS = [
-    'MSFT',
-    'AAPL',
-]
+TICKERS = [ 'MSFT', 'AAPL',]
 
 def main():
     for i, ticker in enumerate(TICKERS):
