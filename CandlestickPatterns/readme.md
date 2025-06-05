@@ -1,1 +1,2 @@
 ### Candlestick Patterns
+--
