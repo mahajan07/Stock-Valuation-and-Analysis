@@ -69,6 +69,7 @@ fe = FeatureEngineer(use_technical_indicator=True,
 processed = fe.preprocess_data(df)
 
 
+
 list_ticker = processed["tic"].unique().tolist()
 list_date = list(pd.date_range(processed['date'].min(),processed['date'].max()).astype(str))
 combination = list(itertools.product(list_date,list_ticker))
@@ -76,6 +77,7 @@ combination = list(itertools.product(list_date,list_ticker))
 processed_full = pd.DataFrame(combination,columns=["date","tic"]).merge(processed,on=["date","tic"],how="left")
 processed_full = processed_full[processed_full['date'].isin(processed['date'])]
 processed_full = processed_full.sort_values(['date','tic'])
+
 
 processed_full = processed_full.fillna(0)
 
