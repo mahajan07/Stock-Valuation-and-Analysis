@@ -1,3 +1,3 @@
-### Candlestick Patterns
+### Candlestick Patterns 
 --------------------------------------------
 
