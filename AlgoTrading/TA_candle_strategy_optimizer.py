@@ -13,6 +13,7 @@ import talib as ta
 from statsmodels.stats.proportion import *
 from math import sqrt
 import math
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from multiprocessing import Process
